@@ -34,7 +34,7 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 28px;
 }
 ul {
@@ -49,7 +49,7 @@ a:active {
   text-decoration: none !important;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 .section-title h2 {
   text-transform: uppercase;
@@ -96,13 +96,83 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
 	Slider Start
 --*/
+.contact-icon {
+  width: 32px; /* Or whatever size you prefer */
+  height: auto;
+}
+
+.row_info {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100%; /* Take the full height of the parent */
+}
+
+.col-md-6 {
+  height: 100%;
+}
+
+.contact-item {
+  min-width: 200px; /* Adjust according to your design needs */
+}
+
+
+#call-to-action .image-content {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  border-radius: 50%;
+  overflow: hidden; /* Hide the parts of the image that are outside the container */
+}
+
+#call-to-action .image-content img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 50%; /* This will make your image rounded */
+}
+
+.text-content, .image-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #slider {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/slider-bg.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 10% 0%;
+  background-position: 10% 280%;
   padding: 200px 0 280px 0;
   position: relative;
+}
+
+#service .service-col {
+  background-color: #a2c6e1;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 13px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.flex-row {
+  display: flex;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.col-md-4 {
+  width: 31%;
+}
+
+.short-footer {
+  padding: 10px 0; /* Reduced padding around the text */
 }
 #slider:before {
   content: "";
@@ -189,7 +259,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	call-to-action Start
 --*/
 #call-to-action {
-  background: url("../img/call-to-action-bg.jpg") no-repeat;
+  background: url("../img/call-to-action-bg.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 70px 0px;
@@ -358,7 +428,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider-work Start
 --*/
 #global-header {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/slider-bg.png") no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
@@ -607,7 +677,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	slider-contact Start
 --*/
 #slider-contact {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/slider-bg.png") no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;

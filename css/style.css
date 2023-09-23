@@ -32,3 +32,17 @@
 .post-area a:hover {
   color: #0D0017;
 }
+
+.contact-item {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.contact-item i {
+  margin-right: 10px;
+}
+
+.narrow-gutter {
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+}
